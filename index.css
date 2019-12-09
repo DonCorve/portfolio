@@ -409,7 +409,7 @@ video {
 	scroll-snap-align: center;
 	height: 100vh;
 	width: 100%;
-	background:rgba(80,80,80,1.00);
+	background:rgb(100,100,100);
 }
 .card {
 	position: relative;
@@ -437,7 +437,7 @@ video {
 	position: absolute;
 	top:45px;
 	left: 5vh;
-	right: 5vh;
+	right: 5vh; 
 	height: 45vh;
 	z-index: 1;
 }
@@ -474,8 +474,35 @@ video {
 	right: 5vh;
 	bottom: 20vh;
 	height: 52.5vh;
-	background: url("Projects/Blehh.png") no-repeat center bottom;
+	background: url("Projects/Map.png") no-repeat center bottom;
 	background-size: contain;
+}
+#glow {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	top: 62.5vh;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+        0 0 30px 15px #fff,
+        0 0 50px 30px #f0f,
+        0 0 70px 45px #0ff; 
+	animation: glow 76s infinite;
+	animation-play-state: inherit;
+	z-index: 100;
+}
+@keyframes glow {
+	0% {opacity: 0;}
+	13% {opacity: 0;}
+	13.5% {opacity: 1;}
+	14% {opacity: 0;}
+	59.5% {opacity: 0;}
+	60% {opacity: 1;}
+	60.5% {opacity: 0;}
+	100% {opacity: 0;}
 }
 #under_screen_desc {
 	display: flex;
@@ -500,6 +527,10 @@ video {
 	display: flex;
 	flex: 1 1 auto;
 	background: transparent;
+	animation-play-state: paused;
+}
+.p_content:hover {
+	animation-play-state: running;
 }
 .p_title {
 	min-width: 5px;

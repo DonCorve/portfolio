@@ -551,7 +551,7 @@ video {
         0 0 30px 15px #fff,
         0 0 50px 30px #f0f,
         0 0 70px 45px #0ff; 
-	animation: glow 76s infinite;
+	animation: glow 75s infinite;
 	animation-play-state: inherit;
 	z-index: 100;
 }
@@ -658,7 +658,7 @@ video {
 }
 .infobox {
 	color: white;
-	background: rgba(0,0,0,0.25);
+	background: rgba(0,0,0,0.35);
 }
 .infobox:hover{
 	background: black;

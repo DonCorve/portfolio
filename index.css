@@ -409,12 +409,72 @@ video {
 	scroll-snap-align: center;
 	height: 100vh;
 	width: 100%;
-	background:rgb(100,100,100);
+	background:gray;
+	background-size: cover;
+}
+.heading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 45px;
+	height: 35vh;
+	width: 100%;
+	background: white;
+	animation: invert 3s forwards;
+	animation-delay: 2s;
+}
+@keyframes invert {
+	0% {filter: none;}
+	100% {filter: invert();}
+}
+.heading h1{
+	font-size: 5vh;
+}
+.precard {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: black;
+	color: white;
+}
+.precard:hover{
+	filter:invert();
+	background:none;
+}
+.precard div{
+	padding: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height:35%;
+	width:15%;
+	color: white;
+	animation: scale 1s ease-in-out infinite alternate;
+	-webkit-animation: scale 1s ease-in-out infinite alternate;
+}
+#pre1 {
+	background: url("Projects/Full.png") no-repeat center center;
+	background-size: contain;
+}
+#pre2 {
+	background: url("Projects/Space.png") no-repeat center center;
+	background-size: contain;
+}
+#pre3 {
+	background: url("Projects/ScrollB.png") no-repeat center center;
+	background-size: contain;
 }
 .card {
 	position: relative;
 	flex: 1 1 auto;
-	padding:5vh;
+	padding:3vh 5vh 0px 5vh;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -422,15 +482,16 @@ video {
 	overflow: hidden;
 }
 .card h2{
-	font-family: Calibri, 'Work Sans';
+	font-family: 'Acme','Work Sans';
 	text-transform: uppercase;
 	font-size: calc(8px + 1vw);
 	
 }
 .card p{
-	font-family: Calibri, 'Work Sans';
+	font-family: 'Work Sans';
 	text-align: justify;
-	font-size: calc(8px + 0.5vw);
+	font-size: calc(7.25px + 0.575vw);
+	line-height: 1.4;
 }
 .cardimg {
 	display: flex;
@@ -514,20 +575,25 @@ video {
 	background: white;
 }
 #note {
-	padding: 5vh;
+	padding-left: 5vh;
+	padding-right: 5vh;
 }
 #note p{
 	margin: 0px;
 }
-/*	animation: scale 0.5s ease-in-out infinite alternate;
-  -webkit-animation: scale 0.5s ease-in-out infinite alternate; */
-
 .p_content {
 	justify-content: center;
 	display: flex;
 	flex: 1 1 auto;
 	background: transparent;
 	animation-play-state: paused;
+}
+.p_contentC {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	background: transparent;
 }
 .p_content:hover {
 	animation-play-state: running;
@@ -561,8 +627,34 @@ video {
 .fill {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	flex: 1 100%;
+}
+.fillH {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 100%;
+}
+.to_video {
+	height: 10vh;
+	width: 10vh;
+	background: url("Projects/ScrollB.png") no-repeat center center;
+	background-size: contain;
+	animation: scale 1s ease-in-out infinite alternate;
+	-webkit-animation: scale 1s ease-in-out infinite alternate;
+}
+.spaceicon {
+	height: 5vh;
+	width: 10vh;
+	background: url("Projects/Space.png") no-repeat center center;
+	background-size: contain;
+	animation: scale 1s ease-in-out infinite alternate;
+	-webkit-animation: scale 1s ease-in-out infinite alternate;
 }
 .infobox {
 	color: white;
@@ -601,7 +693,7 @@ video {
 }
 .infobox h2{
 	font-size: 20px;
-	font-family: 'Calibri';
+	font-family: calibri, 'acme';
 	text-align: justify;
 	letter-spacing: 2px;
 }
@@ -635,7 +727,7 @@ video {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 255, 255);
+    background:white;
     color:black;
     z-index:9;
     position:fixed;

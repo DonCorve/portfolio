@@ -194,28 +194,28 @@ body {
     text-align:center;
 }
 #other_container {
-	font-size: 25px;
+	font-size: calc(8px + 1vw);
 }
 #other_container h1 {
 	font-family: 'ADAMCG';
 }
 #other_container h2 {
 	font-family: Calibri, 'Work Sans';
-	font-size: 25px;
+	font-size: calc(8px + 1vw);
 }
 #other_container p {
 	font-family: 'Work Sans';
 	font-size: 21px;
 }
 #about_container {
-	font-size: 25px;
+	font-size: calc(8px + 1vw);
 }
 #about_container h1 {
 	font-family: 'ADAMCG';
 }
 #about_container h2 {
 	font-family: Calibri, 'Work Sans';
-	font-size: 25px;
+	font-size: calc(8px + 1vw);
 }
 #about_container p {
 	font-family: 'Work Sans';
@@ -242,7 +242,7 @@ body {
 }
 #work_container h1 {
 	font-family: 'ADAMCG';
-	font-size: 40px;
+	font-size: calc(24px + 1.5vw);
 }
 #work_container h3 {
 	font-size: 15px;
@@ -428,10 +428,9 @@ video {
 	0% {filter: none;}
 	100% {filter: invert();}
 }
-.heading h1{
-	font-size: 5vh;
-}
 .precard {
+	text-align: center;
+	padding: 0px 2.75vw;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -446,9 +445,8 @@ video {
 	animation-delay: 5s;
 }
 .precard div{
-	padding: 5vh;
 	height:35%;
-	width:15%;
+	width:35%;
 	animation: scale 1s ease-in-out infinite alternate;
 	-webkit-animation: scale 1s ease-in-out infinite alternate;
 	filter: invert();
@@ -471,7 +469,7 @@ video {
 .card {
 	position: relative;
 	flex: 1 1 auto;
-	padding:3vh 5vh 0px 5vh;
+	padding:3vh 2.75vw 0px 2.75vw;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -487,8 +485,8 @@ video {
 .card p{
 	font-family: 'Work Sans';
 	text-align: justify;
-	font-size: calc(7.25px + 0.575vw);
-	line-height: 1.4;
+	font-size: calc(0.75vh + 0.575vw);
+	line-height: calc(1.1vh + 0.9vw);
 }
 .cardimg {
 	display: flex;
@@ -539,7 +537,7 @@ video {
 	display: flex;
 	position: absolute;
 	justify-content: center;
-	top: 62.5vh;
+	bottom: 31vh;
 	width: 5vh;
 	height: 5vh;
 	border-radius: 50%;
@@ -601,13 +599,10 @@ video {
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end; 
-	min-width: 45px;
-	width: 45px;
-	color: white;
-	background: linear-gradient(-45deg,rgba(0,10,10,0.5),rgba(0,0,15,0.5)), url("PTitle.jpg");
-	/*color: transparent; 
+	min-width: 5px;
+	color: transparent; 
 	width: 5px;
-	background:rgba(255,50,50,1);*/
+	background:rgba(255,50,50,1);
 }
 .p_title:hover {
 	min-width: 45px;
@@ -699,18 +694,18 @@ video {
 }
 .infobox p{
 	font-family: 'Quicksand';
-	font-size: 16px;
+	font-size: 1.65vh;
 	text-align: justify;
 	line-height: 1.75;
 	letter-spacing: 1px;
-	-webkit-text-stroke: 0.15px white;
+	-webkit-text-stroke: 0.35px white;
 }
 .infobox a{
 	transition: color 0.25s;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 1px;
-	-webkit-text-stroke: 0.15px white;
+	-webkit-text-stroke: 0.35px white;
 }
 .Brief {
 	padding-left: 15px;

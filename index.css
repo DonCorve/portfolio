@@ -15,7 +15,7 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(-45deg,rgba(0,100,100,0.25),rgba(0,0,150,0.25)),url("https://images.unsplash.com/photo-1567610443142-aea6becabbbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2125&q=80") center center;
+	background:linear-gradient(-45deg,rgba(50,0,0,0.75),rgba(25,0,25,0.15)),url("Projects/Others/Clay.jpg") no-repeat center center;
     background-size:cover;
     width:100vw;
     height:100vh;
@@ -101,6 +101,7 @@ body {
     display:flex;
     flex-direction:column;
     justify-content:center;
+	align-items: center;
     position:fixed;
     top:0;
     text-align:center;
@@ -159,8 +160,8 @@ body {
     text-align:center;
     font-size:15px;
     transform:rotate(0deg);
-    background:transparent;
-    color:#fff;
+    background:white;
+    color:black;
     position:fixed;
     bottom:0;
 	left:45vw;
@@ -182,7 +183,8 @@ body {
     cursor:pointer;
 }
 #work:hover {
-    background:rgba(0,0,0,0.25);
+    background:black;
+	color:white;
 	border-top: 3px solid rgb(255,50,50);
     cursor:pointer;
 }
@@ -421,7 +423,8 @@ video {
 	height: 45vh;
 	width: 100%;
 	color: white;
-	background: black;
+	background:linear-gradient(-45deg,rgba(0,25,25,0.40),rgba(0,0,35,0.40)),url("Projects/Others/Colors.jpg") no-repeat center center;
+	background-size: cover;
 }
 .heading p{
 	font-family: 'Work Sans';
@@ -437,7 +440,8 @@ video {
 	justify-content: center;
 	height: 30vh;
 	color: white;
-	background: black;
+	background:linear-gradient(-45deg,rgba(0,25,25,0.40),rgba(0,0,35,0.40)), no-repeat center center;
+	background-size: cover;
 }
 .footing a{
 	color: white;
@@ -539,7 +543,7 @@ video {
 	align-items: center;
 }
 .awraper{
-	padding: 50px 0px 50px 0px;
+	padding: 25px 0px 25px 0px;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -610,6 +614,31 @@ object {
 	bottom: 5vh;
 	height: 52.5vh;
 	background: white;
+}
+.Ininfo {
+	display: flex;
+	position: absolute;
+	right:5vh;
+	top:10vh;
+	bottom: 5vh;
+	width: 30%;
+	background: white;
+}
+.InGra {
+	display: flex;
+	position: absolute;
+	left:5vh;
+	top:10vh;
+	bottom: 5vh;
+	width: 60%;
+	background: url("Projects/IntensityGr.gif") no-repeat center center;
+	background-size: contain;
+}
+#InWF {
+	width: 100%;
+	height: 100%;
+	background:url("Projects/IntensityWF.png") no-repeat center center;
+	background-size: contain;
 }
 #under_screen {
 	display: flex;

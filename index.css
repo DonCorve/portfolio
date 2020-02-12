@@ -506,6 +506,16 @@ video {
 	width: 100%;
 	background: rgba(217,217,217,1);
 	overflow: hidden;
+	box-sizing: border-box;
+}
+.cardwop {
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: rgba(217,217,217,1);
+	overflow: hidden;
 }
 .card h2{
 	font-family: calibri, 'acme';
@@ -519,6 +529,12 @@ video {
 	font-size: calc(0.75vh + 0.575vw);
 	line-height: calc(1.1vh + 0.9vw);
 }
+.cardwop h2{
+	font-family: calibri, 'acme';
+	text-transform: uppercase;
+	font-size: calc(8px + 1vw);
+	
+}
 .cardimg {
 	display: flex;
 	position: absolute;
@@ -529,7 +545,7 @@ video {
 	z-index: 1;
 }
 .card:hover {
-	background: transparent;
+	background: white;
 }
 .achuk_card {
 	width: 100%;
@@ -634,10 +650,49 @@ object {
 	background: url("Projects/IntensityGr.gif") no-repeat center center;
 	background-size: contain;
 }
-#InWF {
-	width: 100%;
+.graphic {
 	height: 100%;
+	width: 100%;
+	border:10px solid rgb(217,217,217);
+	box-sizing: border-box;
+}
+#In {
 	background:url("Projects/IntensityWF.png") no-repeat center center;
+	background-size: contain;
+}
+.HBwrap {
+	width: 100%; display:flex; padding:5vh; justify-content: space-between;
+}
+.HBcol {
+	display: flex;
+	background: white;
+}
+#HB1 {
+	background:url("Projects/HB1.jpeg") no-repeat center center;
+	background-size: cover;
+}
+#HB2 {
+	background:url("Projects/HB2.jpg") no-repeat center center;
+	background-size: cover;
+}
+#HB3 {
+	background:url("Projects/HB3.jpeg") no-repeat center center;
+	background-size: cover;
+}
+#HB4 {
+	background:url("Projects/HB4.jpg") no-repeat center center;
+	background-size: cover;
+}
+#HB5 {
+	background:url("Projects/HB5.png") no-repeat center center;
+	background-size: cover;
+}
+#HB6 {
+	background:url("Projects/HB6.png") no-repeat center center;
+	background-size: contain;
+}
+#HB7 {
+	background:url("Projects/HB7.png") no-repeat center center;
 	background-size: contain;
 }
 #under_screen {

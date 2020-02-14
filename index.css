@@ -800,6 +800,7 @@ object {
 	animation-play-state: paused;
 }
 .p_contentC {
+	height: 100%;
 	width: 100%;
 	justify-content: center;
 	display: flex;
@@ -973,7 +974,7 @@ object {
 	width: 100%;
 	display:flex;
 	background:white;
-	overflow: auto;
+	overflow-x: auto;
 }
 .slider::-webkit-scrollbar{
 	height: 8px;
@@ -982,31 +983,20 @@ object {
     background: gainsboro; 
 }
 .slider::-webkit-scrollbar-thumb {
-    background: rgb(255,50,50); 
+    background: white;
+	border: 1px solid gainsboro;
 }
 .slider::-webkit-scrollbar-thumb:hover {
-    background: rgb(255,100,100);
+    background: rgb(255,50,50);
 }
 .r_project {
 	padding: 0px 2vh 2vh 2vh;
 	display: grid;
-	grid-template-columns: repeat(11,1fr);
-	grid-template-rows: 5vh 32vh;
+	grid-template-rows: 5vh 28vh;
 	grid-gap: 2vh;
 }
-.r_project:nth-of-type(2) {
-	grid-template-columns: repeat(5,1fr);
-}
-.r_project:nth-of-type(3) {
-	grid-template-columns: repeat(4,1fr);
-}
-.r_project:nth-of-type(4) {
-	grid-template-columns: repeat(2,1fr);
-}
-.r_project:nth-of-type(5) {
-	grid-template-columns: repeat(7,1fr);
-}
 .r_project div{
+	display: flex;
 	padding: 10px;
 	height: 100%;
 	min-width: 250px;
@@ -1026,26 +1016,6 @@ object {
 	font-size: calc(8px + 0.5vw);
 	height: 100%;
 	border: 1px solid gainsboro;
-}
-.r_project:nth-of-type(1) p{
-	grid-column-start: 1;
-	grid-column-end: 12;
-}
-.r_project:nth-of-type(2) p{
-	grid-column-start: 1;
-	grid-column-end: 6;
-}
-.r_project:nth-of-type(3) p{
-	grid-column-start: 1;
-	grid-column-end: 5;
-}
-.r_project:nth-of-type(4) p{
-	grid-column-start: 1;
-	grid-column-end: 3;
-}
-.r_project:nth-of-type(5) p{
-	grid-column-start: 1;
-	grid-column-end: 8;
 }
 .RestH {
 	align-items: center;

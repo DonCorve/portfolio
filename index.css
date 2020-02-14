@@ -862,7 +862,7 @@ object {
 	-webkit-animation: scale 1s ease-in-out infinite alternate;
 }
 .spaceicon {
-	height: 5vh;
+	height: 10vh;
 	width: 10vh;
 	background: url("Projects/Space.png") no-repeat center center;
 	background-size: contain;

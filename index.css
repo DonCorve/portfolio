@@ -252,7 +252,7 @@ body {
 .misc {
 	display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-rows: 45vh 45vh 45vh 45vh;
     grid-gap: 3vh;
 }
 .misc object{

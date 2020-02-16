@@ -1018,10 +1018,10 @@ object {
 	background: url("Projects/CAD/1.jpg") no-repeat center center;
 	background-size: cover;
 }
-#CAD1:hover{
+/*#CAD1:hover{
 	background: url("Projects/CAD/2.jpg") no-repeat center center;
 	background-size: cover;
-}
+}*/
 .r_project p{
 	margin: 0px; 
 	padding-left: 3vh; 

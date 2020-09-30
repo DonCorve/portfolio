@@ -2,16 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
-@font-face {
-	
-  font-family: ADAMCG;
-  src: url("Fonts/ADAMCG.otf");
-}
-@font-face {
-	
-  font-family: Quicksand;
-  src: url("Fonts/Quicksand_Dash.otf");
-}
 body {
     padding:0px;
     margin:0px;
@@ -112,7 +102,7 @@ body {
 #middle h1 {
 	transition: text-shadow 1s;
     color:rgb(255, 50, 50);
-	font-family: 'ADAMCG';
+	font-family: 'Josefin sans';
     font-size:70px;
 }
 #middle h1:hover {
@@ -199,7 +189,7 @@ body {
 	font-size: calc(8px + 1vw);
 }
 #other_container h1 {
-	font-family: 'ADAMCG';
+	font-family: 'Josefin Sans';
 }
 #other_container h2 {
 	font-family: Calibri, 'Work Sans';
@@ -213,7 +203,7 @@ body {
 	font-size: calc(8px + 1vw);
 }
 #about_container h1 {
-	font-family: 'ADAMCG';
+	font-family: 'Josefin Sans';
 }
 #about_container h2 {
 	font-family: Calibri, 'Work Sans';
@@ -243,7 +233,7 @@ body {
 	cursor: default;
 }
 #work_container h1 {
-	font-family: 'ADAMCG';
+	font-family: 'Josefin Sans';
 	font-size: calc(24px + 1.5vw);
 }
 #work_container h3 {
@@ -922,7 +912,6 @@ object {
 	letter-spacing: 2.5px;
 }
 .infobox p{
-	font-family: 'Quicksand';
 	font-size: 1.65vh;
 	text-align: justify;
 	line-height: 1.75;
